@@ -4,8 +4,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>   
-    <!DOCTYPE html>
-<html>
 <head>
      <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +17,7 @@ body {
 #navbar {
   background-color: #f8f6ec;
   position: fixed;
-  top: -50px;
+  top: 0px;
   width: 100%;
   display: block;
   transition: top 0.3s;
@@ -45,28 +43,26 @@ body {
 
 <div id="navbar">
   <a href="#home">Projekti</a>
-  <a href="#news">Tēma</a>
-  <a href="#contact">Par mani</a>
+  <a href="otrais.html">Tēma</a>
 </div>
-
-
 <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 0) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "fixed";
   }
 }
 </script>
 
-</body>
-
-
-        <title>Mans datorikas portfolio</title>
+        <title> 
+            <br>
+            <br>
+            <br>
+            Mans datorikas portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -74,7 +70,6 @@ function scrollFunction() {
          h1 {color: linen}
          body {color: saddlebrown}
         </style>
-    <body>
         <h1><b><center>Mans datorikas portfolio</center></b></h1>
         <div><ul><b>Inkscape</b></ul>
                  <img src="images/plakats.png" alt="" width="500" height="650"/>
@@ -84,5 +79,8 @@ function scrollFunction() {
             <ul><b>Excel</b></ul>
             <ul><b>Video veidošana</b></ul></div>
         <a href="otrais.html"> <img src="images/arrow.jpg" alt="" width="300" height="200"/> </a>
+            <a href="forma.html">Forma</a>
+            <a href="dzerdaudz.html">Dzer daudz</a>
+            <a href="dzer.html">Dzer</a>
     </body>
 </html>
